@@ -11,7 +11,7 @@ You can add and manage several boxes in a single resource.
 
 ## Install
 
-1. Copy the plugin directory "clickable" into moodle/mod/. 
+1. Copy the plugin directory "clickableboxes" into moodle/mod/. 
 2. Check admin notifications to install.
 3. Done
 
