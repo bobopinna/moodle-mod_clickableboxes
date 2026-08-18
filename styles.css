@@ -1,0 +1,84 @@
+.mod_clickableboxes_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+    margin: 20px 0;
+}
+
+.clickablebox-item {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 17px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+.clickablebox-item:has(.clickablebox-item-link):hover,
+.clickablebox-item:has(.clickablebox-item-link):focus {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    outline: none;
+    border-color: #0f6cbf;
+    cursor: pointer;
+}
+
+.clickablebox-img-wrapper {
+    width: 100%;
+    /* height: 200px; /* Fixed image height in the card */
+    overflow: hidden;
+    background: #f8f9fa; 
+    
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+}
+
+.clickablebox-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+}
+
+.clickablebox-content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.clickablebox-admin-card {
+    background:#fff;
+    border:1px solid #ccc;
+    padding:30px 20px;
+    border-radius:12px;
+    text-align:center;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.clickablebox-admin-card[draggable="true"] {
+    cursor: grab;
+}
+
+.clickablebox-admin-card:active {
+    cursor: grabbing;
+}
+
+.drag-over {
+    border-color: #0f6cbf !important;
+    border-style: dashed !important;
+    background-color: #f0f8ff !important;
+    opacity: 0.8;
+}
+
+#clickableboxes-admin-grid {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
