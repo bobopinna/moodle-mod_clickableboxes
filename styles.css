@@ -52,6 +52,10 @@
     flex-grow: 1;
 }
 
+.clickablebox-content p:last-child {
+    margin-bottom: 0;
+}
+
 .clickablebox-admin-card {
     background:#fff;
     border:1px solid #ccc;
